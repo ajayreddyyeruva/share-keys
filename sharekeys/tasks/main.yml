@@ -1,0 +1,12 @@
+---
+# tasks file for sharekeys
+- name: Copying key
+  copy:
+    src: sharekeys/files/id_rsa.pub
+    dest: /tmp/pub.key
+
+- name: Set key
+  authorized_key:
+    user: ec2-user
+    state: present
+    key: "{{ lookup('file', '/tmp/pub.key') }}"

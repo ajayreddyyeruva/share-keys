@@ -1,0 +1,5 @@
+- name: Server Tasks
+  hosts: serverlist
+  remote_user: rodrigo
+  roles:
+    - sharekeys
