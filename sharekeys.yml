@@ -1,5 +1,5 @@
 - name: Server Tasks
   hosts: serverlist
-  remote_user: rodrigo
+  remote_user: ubuntu
   roles:
     - sharekeys
