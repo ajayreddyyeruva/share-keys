@@ -1,3 +1,0 @@
-[serverlist]
-#10.113.91.196 ansible_user=ec2-user ansible_ssh_private_key_file=~/Desktop/Docs/Keys/oncuedev.pem
-10.113.91.196 ansible_user=ubuntu
